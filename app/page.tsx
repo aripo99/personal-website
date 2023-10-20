@@ -1,5 +1,7 @@
 import TopNavBar from "@/components/TopNavBar"
 import AboutMe from "@/components/AboutMe"
+import Work from "@/components/Work"
+import Projects from "@/components/Projects"
 
 export default function Home() {
   return (
@@ -7,6 +9,8 @@ export default function Home() {
       <div className="z-10 max-w-5xl w-full items-center flex-col justify-center font-mono text-sm lg:flex">
         <TopNavBar />
         <AboutMe />
+        <Work />
+        <Projects />
       </div>
     </main>
   )
