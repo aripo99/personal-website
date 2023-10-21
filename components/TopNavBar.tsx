@@ -7,16 +7,28 @@ import {
     NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
 
+import Link from "next/link";
+
 const TopNacvBar = () => {
     return (
         <NavigationMenu>
             <NavigationMenuList>
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger>About me</NavigationMenuTrigger>
-                    <NavigationMenuTrigger>Work</NavigationMenuTrigger>
-                    <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
-                    <NavigationMenuTrigger>School</NavigationMenuTrigger>
-                    <NavigationMenuTrigger>Books</NavigationMenuTrigger>
+                    <Link href="#">
+                        <NavigationMenuTrigger>About me</NavigationMenuTrigger>
+                    </Link>
+                    <Link href="#work">
+                        <NavigationMenuTrigger>Work</NavigationMenuTrigger>
+                    </Link>
+                    <Link href="#projects">
+                        <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
+                    </Link>
+                    <Link href="#school">
+                        <NavigationMenuTrigger>School</NavigationMenuTrigger>
+                    </Link>
+                    <Link href="#books">
+                        <NavigationMenuTrigger>Books</NavigationMenuTrigger>
+                    </Link>
                 </NavigationMenuItem>
             </NavigationMenuList>
         </NavigationMenu>
