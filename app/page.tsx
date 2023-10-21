@@ -2,6 +2,7 @@ import TopNavBar from "@/components/TopNavBar"
 import AboutMe from "@/components/AboutMe"
 import Work from "@/components/Work"
 import Projects from "@/components/Projects"
+import School from "@/components/School"
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <AboutMe />
         <Work />
         <Projects />
+        <School />
       </div>
     </main>
   )
