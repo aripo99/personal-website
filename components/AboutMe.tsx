@@ -6,7 +6,6 @@ const description = "I'm a software engineer based in the Bay Area. I enjoy buil
 const AboutMe: React.FC = () => {
     return (
         <section className="mt-12 mb-12">
-            <h2 className="text-3xl font-bold mb-10 text-gray-200 underline">About Me</h2>
             <div className="flex justify-between items-center py-8">
                 <Image
                     src={"/images/avatar.jpg"}
