@@ -10,20 +10,12 @@ import {
 function Projects() {
     const projectList = [
         {
-            name: 'E-Commerce Platform',
-            description: 'A modern e-commerce platform with intuitive UI and integrated payment gateway.',
+            name: 'Kognis',
+            description: 'An AI-powered education platform that helps students learn more effectively. It allows students to upload their notes and summarize them, get tested on their knowledge, and get questions answered.',
             thumbnail: '/path_to_thumbnail_image1.jpg',
-            techStack: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+            techStack: ['Next.js', 'Flask', 'MongoDB', 'Pinecone'],
             github: 'https://github.com/yourusername/ecommerce-platform',
             demo: 'https://ecommerce-platform-demo.com'
-        },
-        {
-            name: 'Social Media Dashboard',
-            description: 'An analytics dashboard for tracking social media metrics and engagement.',
-            thumbnail: '/path_to_thumbnail_image2.jpg',
-            techStack: ['Vue.js', 'Firebase', 'Chart.js'],
-            github: 'https://github.com/yourusername/social-media-dashboard',
-            demo: 'https://social-media-dashboard-demo.com'
         }
     ];
 

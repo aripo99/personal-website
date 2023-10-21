@@ -16,16 +16,19 @@ function Work() {
                 "Project A: A brief description",
                 "Project B: Another description",
             ],
-            duration: "20XX - 20XX"
+            duration: "2021 - present"
         },
         {
             title: "Teaching Assistant",
-            company: "UCSB",
+            company: "UC Santa Barbara",
             projects: [
-                "Class 101: Introduction to XYZ",
-                "Class 202: Advanced ABC",
+                "CS 130B: Data Structures and Algorithms II",
+                "CS 130A: Data Structures and Algorithms I",
+                "CS 9: Intermediate Python",
+                "CS 5B: Data Science 2",
+                "CS 64: Computer Organization and Logic Design",
             ],
-            duration: "20XX - 20XX"
+            duration: "2020 - 2022"
         }
     ];
 
