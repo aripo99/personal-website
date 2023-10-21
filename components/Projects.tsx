@@ -11,7 +11,7 @@ function Projects() {
     const projectList = [
         {
             name: 'Kognis',
-            description: 'An AI-powered education platform that helps students learn more effectively. It allows students to upload their notes and summarize them, get tested on their knowledge, and get questions answered.',
+            description: 'An AI-powered education platform that helps students learn more effectively.',
             thumbnail: '/path_to_thumbnail_image1.jpg',
             techStack: ['Next.js', 'Flask', 'MongoDB', 'Pinecone'],
             github: 'https://github.com/yourusername/ecommerce-platform',
