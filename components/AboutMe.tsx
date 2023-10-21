@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 
-const description = "I'm a software engineer based in the Bay Area. I enjoy building things that live on the internet. I develop exceptional websites and web apps that provide intuitive, pixel-perfect user interfaces with efficient and modern backends."
+const description = "Hey! I'm Ari. I'm a software engineer based in the Bay Area. I have a knack for building stuff and am always on the hunt to learn something new. My experience spans across ML, MLOps, backend, and frontend. Above all, I just want to create useful things!";
 
 const AboutMe: React.FC = () => {
     return (
