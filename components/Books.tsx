@@ -9,6 +9,7 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card";
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 type BookProps = {
     title: string;
@@ -43,11 +44,17 @@ const favoriteBooks = [
         // link: 'https://example.com/pragmatic-programmer'
     },
     {
-        title: 'The Pragmatic Programmer',
+        title: 'The Pragmatic Programmer 2',
         author: 'Andrew Hunt and David Thomas',
         // cover: '/path/to/image5.jpg',
         // link: 'https://example.com/pragmatic-programmer'
-    }
+    },
+    {
+        title: 'Introduction to Computation',
+        author: 'Michael Sipser',
+        // cover: '/path/to/image4.jpg',
+        // link: 'https://example.com/theory-computation'
+    },
 ];
 
 
@@ -68,31 +75,32 @@ const BookCard: React.FC<BookProps> = ({ title, author, cover, link }) => (
     </Card>
 );
 
-const scrollByAmount = (container: HTMLElement | null, amount: number, setStartIndex: React.Dispatch<React.SetStateAction<number>>) => {
-    if (container) {
-        const newIndex = amount > 0 ? 1 : -1; // increase or decrease index based on direction
-        setStartIndex(prev => Math.max(0, prev + newIndex)); // make sure not to go below 0
-        container.scrollBy({ left: amount, behavior: 'smooth' });
-    }
-};
-
 const BooksCarousel: React.FC = () => {
     const scrollRef = useRef(null);
-    const [startIndex, setStartIndex] = useState<number>(0); // initial start index
+    const [startIndex, setStartIndex] = useState<number>(0);
     const visibleBooksCount = 4;
 
+    const scrollByAmount = (direction: 'left' | 'right') => {
+        if (direction === 'left') {
+            setStartIndex(prev => Math.max(0, prev - 1));
+        } else if (direction === 'right') {
+            setStartIndex(prev => Math.min(favoriteBooks.length - visibleBooksCount, prev + 1));
+        }
+    };
+
+
     return (
-        <section className="mb-8 relative">
+        <section className="mb-8 relative flex items-center">
             {startIndex > 0 && (
                 <button
-                    onClick={() => scrollByAmount(scrollRef.current, -250, setStartIndex)}
-                    className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10"
+                    onClick={() => scrollByAmount('left')}
+                    className="absolute left-[-40px] top-1/2 transform -translate-y-1/2 z-10 p-2 bg-gray-900 text-white rounded-full shadow-lg"
                 >
-                    &lt;
+                    <FaChevronLeft className="w-5 h-5" />
                 </button>
             )}
 
-            <div className="flex overflow-x-auto" ref={scrollRef}>
+            <div className="flex overflow-x-auto mx-auto gap-4" ref={scrollRef}>
                 {favoriteBooks.slice(startIndex, startIndex + visibleBooksCount).map((book, index) => (
                     <BookCard key={index} {...book} />
                 ))}
@@ -100,10 +108,10 @@ const BooksCarousel: React.FC = () => {
 
             {(startIndex + visibleBooksCount) < favoriteBooks.length && (
                 <button
-                    onClick={() => scrollByAmount(scrollRef.current, 250, setStartIndex)}
-                    className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10"
+                    onClick={() => scrollByAmount('right')}
+                    className="absolute right-[-40px] top-1/2 transform -translate-y-1/2 z-10 p-2 bg-gray-900 text-white rounded-full shadow-lg"
                 >
-                    &gt;
+                    <FaChevronRight className="w-5 h-5" />
                 </button>
             )}
         </section>
