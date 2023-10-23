@@ -13,7 +13,7 @@ import {
 type BookProps = {
     title: string;
     author: string;
-    cover: string; // URL to the cover image
+    cover?: string; // URL to the cover image
     link?: string;  // Optional link related to the book
 };
 
@@ -21,32 +21,32 @@ const favoriteBooks = [
     {
         title: 'Brief History of Time',
         author: 'Stephen Hawking',
-        cover: '/path/to/image1.jpg',
-        link: 'https://example.com/brief-history'
+        // cover: '/path/to/image1.jpg',
+        // link: 'https://example.com/brief-history'
     },
     {
         title: 'The Elegant Universe',
         author: 'Brian Greene',
-        cover: '/path/to/image2.jpg',
-        link: 'https://example.com/elegant-universe'
+        // cover: '/path/to/image2.jpg',
+        // link: 'https://example.com/elegant-universe'
     },
     {
         title: 'Introduction to Computation',
         author: 'Michael Sipser',
-        cover: '/path/to/image4.jpg',
-        link: 'https://example.com/theory-computation'
+        // cover: '/path/to/image4.jpg',
+        // link: 'https://example.com/theory-computation'
     },
     {
         title: 'The Pragmatic Programmer',
         author: 'Andrew Hunt and David Thomas',
         cover: '/path/to/image5.jpg',
-        link: 'https://example.com/pragmatic-programmer'
+        // link: 'https://example.com/pragmatic-programmer'
     },
     {
         title: 'The Pragmatic Programmer',
         author: 'Andrew Hunt and David Thomas',
-        cover: '/path/to/image5.jpg',
-        link: 'https://example.com/pragmatic-programmer'
+        // cover: '/path/to/image5.jpg',
+        // link: 'https://example.com/pragmatic-programmer'
     }
 ];
 
@@ -57,14 +57,14 @@ const BookCard: React.FC<BookProps> = ({ title, author, cover, link }) => (
             <CardTitle>{title}</CardTitle>
             <CardDescription>{author}</CardDescription>
         </CardHeader>
-        <CardContent>
+        {/* <CardContent>
             <img src={cover} alt={title} className="w-full h-64 object-cover" />
-        </CardContent>
-        {link && (
+        </CardContent> */}
+        {/* {link && (
             <CardFooter>
                 <a href={link} className="text-blue-500 hover:underline">Learn More</a>
             </CardFooter>
-        )}
+        )} */}
     </Card>
 );
 
