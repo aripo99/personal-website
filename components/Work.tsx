@@ -13,8 +13,9 @@ function Work() {
             title: "Software Engineer",
             company: "Appfolio",
             projects: [
-                "Project A: A brief description",
-                "Project B: Another description",
+                "RealmX: Currently working in RealmX, an assistant-like chatbot for property managers to get quick answers to their data questions, \"What tenants have not paid rent this month\", , product questions \"How do I charge tenants\", and more. I worked on the backend, frontend, and the ML services.",
+                "Invoice Processing: Worked on a machine learning pipeline that automatically extracts data from invoices and receipts. It processes ~13M invoices each year. ",
+                "Bank Feed: A bank reconciliation tool that automatically matches transactions from a bank statement to transactions in Appfolio. I workend on the end to end machine learning pipeline, and it currently matches ~20k transactions each month.",
             ],
             duration: "2021 - present"
         },
