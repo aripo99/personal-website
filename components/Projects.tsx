@@ -12,10 +12,15 @@ function Projects() {
         {
             name: 'Kognis',
             description: 'An AI-powered education platform that helps students learn more effectively.',
-            thumbnail: '/path_to_thumbnail_image1.jpg',
+            // thumbnail: '/path_to_thumbnail_image1.jpg',
             techStack: ['Next.js', 'Flask', 'MongoDB', 'Pinecone'],
-            github: 'https://github.com/yourusername/ecommerce-platform',
-            demo: 'https://ecommerce-platform-demo.com'
+            demo: 'https://www.youtube.com/watch?v=CPscvvBMwh0'
+        },
+        {
+            name: 'Aitr',
+            description: 'A platform to learn React using AI, adapting exercises and content on the fly.',
+            // thumbnail: '/path_to_thumbnail_image2.jpg',
+            techStack: ['Next.js', 'Supabase', 'Tailwind', 'shadcn/ui'],
         }
     ];
 
@@ -31,7 +36,7 @@ function Projects() {
                             <CardDescription>{project.description}</CardDescription>
                         </CardHeader>
                         <CardContent>
-                            <img src={project.thumbnail} alt={project.name + " thumbnail"} className="w-full rounded" />
+                            {/* <img src={project.thumbnail} alt={project.name + " thumbnail"} className="w-full rounded" /> */}
                             <div className="flex mt-4 space-x-2">
                                 {project.techStack.map((tech, idx) => (
                                     <span key={idx} className="bg-gray-800 text-gray-300 rounded p-1 text-xs">{tech}</span>
@@ -40,8 +45,7 @@ function Projects() {
                         </CardContent>
                         <CardFooter>
                             <div className="flex space-x-4">
-                                {project.github && <a href={project.github} target="_blank" rel="noopener noreferrer">GitHub</a>}
-                                {project.demo && <a href={project.demo} target="_blank" rel="noopener noreferrer">Live Demo</a>}
+                                {project.demo ? <a href={project.demo} target="_blank" rel="noopener noreferrer">Live Demo</a> : <p> Coming Soon </p>}
                             </div>
                         </CardFooter>
                     </Card>
