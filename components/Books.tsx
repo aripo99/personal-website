@@ -20,38 +20,38 @@ type BookProps = {
 
 const favoriteBooks = [
     {
-        title: 'Brief History of Time',
-        author: 'Stephen Hawking',
+        title: 'Designing Machine Learning Systems',
+        author: 'Chip Huyen',
         // cover: '/path/to/image1.jpg',
         // link: 'https://example.com/brief-history'
     },
     {
-        title: 'The Elegant Universe',
-        author: 'Brian Greene',
+        title: 'Build',
+        author: 'Tony Fadell',
         // cover: '/path/to/image2.jpg',
         // link: 'https://example.com/elegant-universe'
     },
     {
-        title: 'Introduction to Computation',
-        author: 'Michael Sipser',
+        title: 'The Pragmatic Programmer',
+        author: 'Andy Hunt',
         // cover: '/path/to/image4.jpg',
         // link: 'https://example.com/theory-computation'
     },
     {
-        title: 'The Pragmatic Programmer',
-        author: 'Andrew Hunt and David Thomas',
-        cover: '/path/to/image5.jpg',
-        // link: 'https://example.com/pragmatic-programmer'
-    },
-    {
-        title: 'The Pragmatic Programmer 2',
-        author: 'Andrew Hunt and David Thomas',
+        title: 'The Lean Startup',
+        author: 'Eric Ries',
         // cover: '/path/to/image5.jpg',
         // link: 'https://example.com/pragmatic-programmer'
     },
     {
-        title: 'Introduction to Computation',
-        author: 'Michael Sipser',
+        title: 'Shoe Dog',
+        author: 'Phil Knight',
+        // cover: '/path/to/image5.jpg',
+        // link: 'https://example.com/pragmatic-programmer'
+    },
+    {
+        title: 'Man\'s Search for Meaning',
+        author: 'Viktor E. Frankl',
         // cover: '/path/to/image4.jpg',
         // link: 'https://example.com/theory-computation'
     },
