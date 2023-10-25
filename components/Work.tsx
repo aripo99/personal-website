@@ -12,8 +12,9 @@ function Work() {
         {
             title: "Software Engineer",
             company: "Appfolio",
+            projectsHeader: "Projects",
             projects: [
-                "RealmX: A assistant-like chatbot for property managers to get quick answers to their data questions, \"What tenants have not paid rent this month\", , product questions \"How do I charge tenants\", and more. I worked on the backend, frontend, and the ML services.",
+                "RealmX: A assistant-like chatbot for property managers to get quick answers to their data questions, \"What tenants have not paid rent this month\", product questions \"How do I charge tenants\", and more. I worked on the backend, frontend, and the ML services.",
                 "Invoice Processing: Machine learning pipeline that automatically extracts data from invoices and receipts. processing ~13M invoices each year. ",
                 "Bank Feed: Bank reconciliation tool that automatically matches transactions from a bank statement to transactions in Appfolio, matching ~20k transactions each month.",
             ],
@@ -30,6 +31,7 @@ function Work() {
                 "CS 5B: Data Science 2",
                 "CS 64: Computer Organization and Logic Design",
             ],
+            projectsHeader: "Classes",
             techStack: ["C++", "Python", "Pandas", "NumPy"],
             duration: "2020 - 2022"
         }
@@ -47,6 +49,7 @@ function Work() {
                             <CardDescription className="text-gray-300">{exp.company}</CardDescription>
                         </CardHeader>
                         <CardContent className="mb-4">
+                            <div className="text-xl text-gray-400 mb-4 font-semibold">{exp.projectsHeader}</div>
                             {exp.projects.map((project, idx) => (
                                 <div key={idx} className="mb-2 text-gray-400">{project}</div>
                             ))}
