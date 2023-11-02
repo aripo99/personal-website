@@ -8,6 +8,11 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'aripo',
   description: 'My personal website',
+  icons: {
+    icon: '/images/avatar.jpg',
+    shortcut: '/images/avatar.jpg',
+    apple: '/images/avatar.jpg',
+  },
 }
 
 
