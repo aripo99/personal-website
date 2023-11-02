@@ -6,7 +6,6 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card";
-import Project from "@/components/WorkProject";
 import {
     Accordion,
     AccordionContent,
