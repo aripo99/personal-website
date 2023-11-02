@@ -9,9 +9,9 @@ import {
 
 import Link from "next/link";
 
-const TopNacvBar = () => {
+const TopNavBar = () => {
     return (
-        <NavigationMenu>
+        <NavigationMenu className="md:block hidden">
             <NavigationMenuList>
                 <NavigationMenuItem>
                     <Link href="#">
@@ -43,4 +43,4 @@ const TopNacvBar = () => {
     )
 }
 
-export default TopNacvBar;
+export default TopNavBar;
