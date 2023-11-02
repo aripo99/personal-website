@@ -6,6 +6,13 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card";
+import Project from "@/components/WorkProject";
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "@/components/ui/accordion";
 
 function Work() {
     const experiences = [
@@ -50,9 +57,17 @@ function Work() {
                         </CardHeader>
                         <CardContent className="mb-4">
                             <div className="text-xl text-gray-400 mb-4 font-semibold">{exp.projectsHeader}</div>
-                            {exp.projects.map((project, idx) => (
-                                <div key={idx} className="mb-2 text-gray-400">{project}</div>
-                            ))}
+                            <Accordion type="single" collapsible className="w-full">
+                                {exp.projects.map((project, idx) => (
+                                    <AccordionItem key={idx} value={`project-${idx}`}>
+                                        <AccordionTrigger>{project.split(": ", 1)}</AccordionTrigger>
+                                        <AccordionContent>
+                                            {project.split(": ", 2)[1]}
+                                        </AccordionContent>
+                                    </AccordionItem>
+                                ))}
+                            </Accordion>
+
                         </CardContent>
                         <CardFooter className="text-gray-300">
                             <div className="flex flex-col">
