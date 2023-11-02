@@ -45,7 +45,7 @@ function Projects() {
                         </CardContent>
                         <CardFooter>
                             <div className="flex space-x-4">
-                                {project.demo ? <a href={project.demo} target="_blank" rel="noopener noreferrer">Live Demo</a> : <p> Coming Soon </p>}
+                                {project.demo ? <a href={project.demo} target="_blank" rel="noopener noreferrer">Live Demo</a> : null}
                             </div>
                         </CardFooter>
                     </Card>
