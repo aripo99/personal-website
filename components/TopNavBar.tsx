@@ -4,7 +4,6 @@ import {
     NavigationMenu,
     NavigationMenuItem,
     NavigationMenuList,
-    NavigationMenuTrigger,
     NavigationMenuButton
 } from "@/components/ui/navigation-menu"
 
