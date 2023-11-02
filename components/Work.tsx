@@ -56,9 +56,9 @@ function Work() {
                         </CardContent>
                         <CardFooter className="text-gray-300">
                             <div className="flex flex-col">
-                                <div className="flex mb-2">
+                                <div className="flex flex-wrap mb-2">
                                     {exp.techStack.map((tech, idx) => (
-                                        <span key={idx} className="bg-gray-800 text-gray-300 rounded p-1 text-xs mr-2">{tech}</span>
+                                        <span key={idx} className="bg-gray-800 text-gray-300 rounded p-1 text-xs mr-2 mb-2">{tech}</span>
                                     ))}
                                 </div>
                                 <div>{exp.duration}</div>
