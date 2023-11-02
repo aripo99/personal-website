@@ -37,9 +37,9 @@ function Projects() {
                         </CardHeader>
                         <CardContent>
                             {/* <img src={project.thumbnail} alt={project.name + " thumbnail"} className="w-full rounded" /> */}
-                            <div className="flex mt-4 space-x-2">
+                            <div className="flex flex-wrap mt-4">
                                 {project.techStack.map((tech, idx) => (
-                                    <span key={idx} className="bg-gray-800 text-gray-300 rounded p-1 text-xs">{tech}</span>
+                                    <span key={idx} className="bg-gray-800 text-gray-300 rounded p-1 text-xs mb-2 mr-2">{tech}</span>
                                 ))}
                             </div>
                         </CardContent>
