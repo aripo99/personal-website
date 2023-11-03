@@ -4,6 +4,7 @@ import Work from "@/components/Work"
 import Projects from "@/components/Projects"
 import School from "@/components/School"
 import Books from "@/components/Books"
+import ContactForm from "@/components/ContactForm"
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Projects />
         <School />
         <Books />
+        <ContactForm />
       </div>
     </main>
   )
