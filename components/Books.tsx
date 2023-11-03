@@ -1,119 +1,111 @@
-"use client";
-
-import React, { useRef, useState } from 'react';
+import Image from "next/image"
+import { cn } from "@/lib/utils"
 import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card";
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+    ContextMenu,
+    ContextMenuTrigger,
+} from "@/components/ui/context-menu"
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
+
 
 type BookProps = {
     title: string;
     author: string;
-    cover?: string; // URL to the cover image
-    link?: string;  // Optional link related to the book
+    cover: string;
+    aspectRatio?: "portrait" | "square";
+    width?: number;
+    height?: number;
+    className?: string;
 };
 
 const favoriteBooks = [
     {
         title: 'Designing Machine Learning Systems',
         author: 'Chip Huyen',
-        // cover: '/path/to/image1.jpg',
-        // link: 'https://example.com/brief-history'
+        cover: '/images/designing_ml_systems.jpg',
     },
     {
         title: 'Build',
         author: 'Tony Fadell',
-        // cover: '/path/to/image2.jpg',
-        // link: 'https://example.com/elegant-universe'
+        cover: '/images/build.jpg',
     },
     {
         title: 'The Pragmatic Programmer',
         author: 'Andy Hunt',
-        // cover: '/path/to/image4.jpg',
-        // link: 'https://example.com/theory-computation'
+        cover: '/images/pragmatic_programmer.jpg',
     },
     {
         title: 'The Lean Startup',
         author: 'Eric Ries',
-        // cover: '/path/to/image5.jpg',
-        // link: 'https://example.com/pragmatic-programmer'
+        cover: '/images/the_lean_startup.jpg',
     },
-    {
-        title: 'Shoe Dog',
-        author: 'Phil Knight',
-        // cover: '/path/to/image5.jpg',
-        // link: 'https://example.com/pragmatic-programmer'
-    },
-    {
-        title: 'Man\'s Search for Meaning',
-        author: 'Viktor E. Frankl',
-        // cover: '/path/to/image4.jpg',
-        // link: 'https://example.com/theory-computation'
-    },
+    // {
+    //     title: 'Shoe Dog',
+    //     author: 'Phil Knight',
+    //     cover: '/images/shoe_dog.jpg',
+    // },
+    // {
+    //     title: 'Man\'s Search for Meaning',
+    //     author: 'Viktor E. Frankl',
+    //     cover: '/images/meaning.jpg',
+    // },
 ];
 
-
-const BookCard: React.FC<BookProps> = ({ title, author, cover, link }) => (
-    <Card className="mr-4 mb-4 w-56">
-        <CardHeader>
-            <CardTitle>{title}</CardTitle>
-            <CardDescription>{author}</CardDescription>
-        </CardHeader>
-        {/* <CardContent>
-            <img src={cover} alt={title} className="w-full h-64 object-cover" />
-        </CardContent> */}
-        {/* {link && (
-            <CardFooter>
-                <a href={link} className="text-blue-500 hover:underline">Learn More</a>
-            </CardFooter>
-        )} */}
-    </Card>
-);
+const Book = ({
+    title,
+    author,
+    cover,
+    aspectRatio = "portrait",
+    width,
+    height,
+    className,
+    ...props
+}: BookProps) => {
+    return (
+        <div className={cn("space-y-3", className)} {...props}>
+            <ContextMenu>
+                <ContextMenuTrigger>
+                    <div className="overflow-hidden rounded-md">
+                        <Image
+                            src={cover}
+                            alt={title}
+                            width={width}
+                            height={height}
+                            className={cn(
+                                "h-auto w-auto object-cover transition-all hover:scale-105",
+                                aspectRatio === "portrait" ? "aspect-[3/4]" : "aspect-square"
+                            )}
+                        />
+                    </div>
+                </ContextMenuTrigger>
+            </ContextMenu>
+            <div className="space-y-1 text-sm">
+                <h3 className="font-medium leading-none">{title}</h3>
+                <p className="text-xs text-muted-foreground">{author}</p>
+            </div>
+        </div>
+    )
+}
 
 const BooksCarousel: React.FC = () => {
-    const scrollRef = useRef(null);
-    const [startIndex, setStartIndex] = useState<number>(0);
-    const visibleBooksCount = 4;
-
-    const scrollByAmount = (direction: 'left' | 'right') => {
-        if (direction === 'left') {
-            setStartIndex(prev => Math.max(0, prev - 1));
-        } else if (direction === 'right') {
-            setStartIndex(prev => Math.min(favoriteBooks.length - visibleBooksCount, prev + 1));
-        }
-    };
-
-
     return (
-        <section className="mb-8 relative flex items-center">
-            {startIndex > 0 && (
-                <button
-                    onClick={() => scrollByAmount('left')}
-                    className="absolute left-[-40px] top-1/2 transform -translate-y-1/2 z-10 p-2 bg-gray-900 text-white rounded-full shadow-lg"
-                >
-                    <FaChevronLeft className="w-5 h-5" />
-                </button>
-            )}
-
-            <div className="flex overflow-x-auto mx-auto gap-4" ref={scrollRef}>
-                {favoriteBooks.slice(startIndex, startIndex + visibleBooksCount).map((book, index) => (
-                    <BookCard key={index} {...book} />
-                ))}
-            </div>
-
-            {(startIndex + visibleBooksCount) < favoriteBooks.length && (
-                <button
-                    onClick={() => scrollByAmount('right')}
-                    className="absolute right-[-40px] top-1/2 transform -translate-y-1/2 z-10 p-2 bg-gray-900 text-white rounded-full shadow-lg"
-                >
-                    <FaChevronRight className="w-5 h-5" />
-                </button>
-            )}
+        <section className="mb-8 relative">
+            <ScrollArea className="overflow-x-auto">
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 auto-cols-[250px] pb-4">
+                    {favoriteBooks.map((book) => (
+                        <Book
+                            key={book.title}
+                            title={book.title}
+                            author={book.author}
+                            cover={book.cover}
+                            className="w-[250px]"
+                            aspectRatio="portrait"
+                            width={250}
+                            height={330}
+                        />
+                    ))}
+                </div>
+                <ScrollBar orientation="horizontal" />
+            </ScrollArea>
         </section>
     );
 };
