@@ -89,15 +89,15 @@ const Book = ({
 const BooksCarousel: React.FC = () => {
     return (
         <section className="mb-8 relative">
-            <ScrollArea className="overflow-x-auto">
-                <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 auto-cols-[250px] pb-4">
+            <ScrollArea>
+                <div className="flex space-x-4 pb-4">
                     {favoriteBooks.map((book) => (
                         <Book
                             key={book.title}
                             title={book.title}
                             author={book.author}
                             cover={book.cover}
-                            className="w-[250px]"
+                            className="w-[250px] min-w-[250px]"
                             aspectRatio="portrait"
                             width={250}
                             height={330}
