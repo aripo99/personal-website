@@ -22,7 +22,7 @@ function Work() {
             projects: [
                 "RealmX: A assistant-like chatbot for property managers. It offers responses to data questions, such as \"Which tenants have not paid rent this month?\", and product inquiries like \"How do I charge tenants?\". I contributed on the backend, frontend, and the ML services.",
                 "Invoice Processing: A machine learning pipeline that automatically extracts data from invoices and receipts, processing approximately 13 million invoices each year. My responsibilities included monitoring, maintenance, refactoring, and implementing strategies to reduce cloud infrastructure costs significantly.",
-                "Bank Feed: A comprehensive bank reconciliation tool designed to automatically match transactions from bank statements to their counterparts in Appfolio. Efficiently handles approximately 20k transactions each month. I worked on the entire development lifecycle, from initial design, data labeling, model training, and evaluation to deployment, continuous monitoring, and maintenance.",
+                "Bank Feed: A bank reconciliation tool designed to automatically match transactions from bank statements to their counterparts in Appfolio. It currently handles approximately 20k transactions each month. I worked on the entire development lifecycle, from initial design, data labeling, model training, and evaluation to deployment, continuous monitoring, and maintenance.",
             ],
             techStack: ["Rails", "React", "Python", "Rails", "Typescript", "AWS"],
             duration: "2021 - present"
