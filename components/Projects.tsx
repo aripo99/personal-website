@@ -21,6 +21,11 @@ function Projects() {
             description: 'A platform to learn React using AI, adapting exercises and content on the fly.',
             // thumbnail: '/path_to_thumbnail_image2.jpg',
             techStack: ['Next.js', 'Supabase', 'Tailwind', 'shadcn/ui'],
+        },
+        {
+            name: 'Meme Generator',
+            description: 'A meme generator that uses the gpt vision API to generate memes from uploaded images.',
+            techStack: ['Next.js', 'Tailwind', 'shadcn/ui']
         }
     ];
 
