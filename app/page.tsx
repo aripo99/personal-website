@@ -4,6 +4,7 @@ import Work from "@/components/Work"
 import Projects from "@/components/Projects"
 import School from "@/components/School"
 import Books from "@/components/Books"
+import Footer from "@/components/Footer"
 
 export default function Home() {
   return (
@@ -15,6 +16,9 @@ export default function Home() {
         <Projects />
         <School />
         <Books />
+      </div>
+      <div className="z-10 w-full">
+        <Footer />
       </div>
     </main>
   )
