@@ -7,6 +7,7 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 import { FaGithub } from 'react-icons/fa';
+import Image from 'next/image';
 
 function Projects() {
     const projectList = [
@@ -14,20 +15,23 @@ function Projects() {
             name: 'Kognis',
             description: 'An AI-powered education platform that helps students learn more effectively.',
             techStack: ['Next.js', 'Flask', 'MongoDB', 'Pinecone'],
-            demo: 'https://www.youtube.com/watch?v=CPscvvBMwh0'
+            demo: 'https://www.youtube.com/watch?v=CPscvvBMwh0',
+            image: '/images/kognis.png',
         },
         {
             name: 'Aitr',
             description: 'A platform to learn React using AI, adapting exercises and content on the fly.',
             techStack: ['Next.js', 'Supabase', 'Tailwind'],
-            github: 'https://github.com/aripo99/react-learning-ai-app'
+            github: 'https://github.com/aripo99/react-learning-ai-app',
+            image: '/images/aitr.png',
         },
         {
             name: 'Meme Generator',
             description: 'A meme generator that uses the gpt vision API to generate memes from uploaded images.',
             techStack: ['Next.js', 'Tailwind', 'shadcn/ui'],
             demo: 'https://www.youtube.com/watch?v=BW8J4QgWGJg',
-            github: 'https://github.com/aripo99/meme-generator'
+            github: 'https://github.com/aripo99/meme_generator',
+            image: '/images/meme_generator.png',
         }
     ];
 
@@ -43,7 +47,15 @@ function Projects() {
                             <CardDescription>{project.description}</CardDescription>
                         </CardHeader>
                         <CardContent>
-                            {/* <img src={project.thumbnail} alt={project.name + " thumbnail"} className="w-full rounded" /> */}
+                            <Image
+                                src={project.image}
+                                alt={project.name + " thumbnail"}
+                                width={500}
+                                height={300}
+                                className="w-full rounded"
+                                layout="responsive"
+                                objectFit="cover"
+                            />
                             <div className="flex flex-wrap mt-4">
                                 {project.techStack.map((tech, idx) => (
                                     <span key={idx} className="bg-gray-800 text-gray-300 rounded p-1 text-xs mb-2 mr-2">{tech}</span>
