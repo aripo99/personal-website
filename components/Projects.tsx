@@ -69,7 +69,9 @@ const Projects = () => {
                 {projectList.map((project, index) => (
                     <Card key={index}>
                         <CardHeader>
-                            <CardTitle>{project.name}</CardTitle>
+                            <Link href={project.url}>
+                                <CardTitle>{project.name}</CardTitle>
+                            </Link>
                             <CardDescription>{project.description}</CardDescription>
                         </CardHeader>
                         <CardContent>
