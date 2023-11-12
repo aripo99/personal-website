@@ -7,9 +7,32 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 import { FaGithub } from 'react-icons/fa';
-import Image from 'next/image';
+import Image from 'next/image'
+import Link from 'next/link';
 
-function Projects() {
+interface ProjectImageProps {
+    name: string;
+    image: string;
+    url: string;
+}
+
+const ProjectImage: React.FC<ProjectImageProps> = ({ name, image, url }) => {
+    return (
+        <Link href={url} className="block overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+            <Image
+                src={image}
+                alt={`${name} thumbnail`}
+                width={500}
+                height={300}
+                className="w-full h-auto"
+                layout="responsive"
+                objectFit="cover"
+            />
+        </Link>
+    );
+};
+
+const Projects = () => {
     const projectList = [
         {
             name: 'Kognis',
@@ -17,6 +40,7 @@ function Projects() {
             techStack: ['Next.js', 'Flask', 'MongoDB', 'Pinecone'],
             demo: 'https://www.youtube.com/watch?v=CPscvvBMwh0',
             image: '/images/kognis.png',
+            url: 'https://kognis.ai',
         },
         {
             name: 'Aitr',
@@ -24,6 +48,7 @@ function Projects() {
             techStack: ['Next.js', 'Supabase', 'Tailwind'],
             github: 'https://github.com/aripo99/react-learning-ai-app',
             image: '/images/aitr.png',
+            url: 'https://aitr.vercel.app',
         },
         {
             name: 'Meme Generator',
@@ -32,6 +57,7 @@ function Projects() {
             demo: 'https://www.youtube.com/watch?v=BW8J4QgWGJg',
             github: 'https://github.com/aripo99/meme_generator',
             image: '/images/meme_generator.png',
+            url: 'https://aimemelab.com'
         }
     ];
 
@@ -47,14 +73,10 @@ function Projects() {
                             <CardDescription>{project.description}</CardDescription>
                         </CardHeader>
                         <CardContent>
-                            <Image
-                                src={project.image}
-                                alt={project.name + " thumbnail"}
-                                width={500}
-                                height={300}
-                                className="w-full rounded"
-                                layout="responsive"
-                                objectFit="cover"
+                            <ProjectImage
+                                name={project.name}
+                                image={project.image}
+                                url={project.url}
                             />
                             <div className="flex flex-wrap mt-4">
                                 {project.techStack.map((tech, idx) => (
