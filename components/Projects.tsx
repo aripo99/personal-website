@@ -58,6 +58,14 @@ const Projects = () => {
             github: 'https://github.com/aripo99/meme_generator',
             image: '/images/meme_generator.png',
             url: 'https://aimemelab.com'
+        },
+        {
+            name: 'Ink Vision',
+            description: 'A web app that generates tattoo designs.',
+            techStack: ['Next.js', 'Tailwind', 'shadcn/ui'],
+            github: 'https://github.com/aripo99/ink-vision',
+            image: '/images/tattoo_generator.png',
+            url: 'https://aitr.vercel.app'
         }
     ];
 
