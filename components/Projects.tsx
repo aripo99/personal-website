@@ -66,6 +66,14 @@ const Projects = () => {
             github: 'https://github.com/aripo99/ink-vision',
             image: '/images/tattoo_generator.png',
             url: 'https://aitr.vercel.app'
+        },
+        {
+            name: 'Yatdl',
+            description: 'Yet Another To Do List, but minimal & gamified.',
+            techStack: ['Next.js', 'supabase', 'Tailwind', 'shadcn/ui'],
+            github: 'https://github.com/aripo99/yatdl',
+            image: '/images/yatdl.png',
+            url: 'https://yatdl-aripo99.vercel.app'
         }
     ];
 
