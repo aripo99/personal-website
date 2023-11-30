@@ -43,14 +43,6 @@ const Projects = () => {
             url: 'https://kognis.ai',
         },
         {
-            name: 'Aitr',
-            description: 'A platform to learn React using AI, adapting exercises and content on the fly.',
-            techStack: ['Next.js', 'Supabase', 'Tailwind'],
-            github: 'https://github.com/aripo99/react-learning-ai-app',
-            image: '/images/aitr.png',
-            url: 'https://aitr.vercel.app',
-        },
-        {
             name: 'Meme Generator',
             description: 'A meme generator that uses the gpt vision API to generate memes from uploaded images.',
             techStack: ['Next.js', 'Tailwind', 'shadcn/ui'],
@@ -58,6 +50,14 @@ const Projects = () => {
             github: 'https://github.com/aripo99/meme_generator',
             image: '/images/meme_generator.png',
             url: 'https://aimemelab.com'
+        },
+        {
+            name: 'Yatdl',
+            description: 'Yet Another To Do List, but minimal and gamified. Destroy todos :p',
+            techStack: ['Next.js', 'supabase', 'Tailwind', 'shadcn/ui'],
+            github: 'https://github.com/aripo99/yatdl',
+            image: '/images/yatdl.png',
+            url: 'https://yatdl-aripo99.vercel.app'
         },
         {
             name: 'Ink Vision',
@@ -68,12 +68,12 @@ const Projects = () => {
             url: 'https://aitr.vercel.app'
         },
         {
-            name: 'Yatdl',
-            description: 'Yet Another To Do List, but minimal & gamified.',
-            techStack: ['Next.js', 'supabase', 'Tailwind', 'shadcn/ui'],
-            github: 'https://github.com/aripo99/yatdl',
-            image: '/images/yatdl.png',
-            url: 'https://yatdl-aripo99.vercel.app'
+            name: 'Aitr',
+            description: 'A platform to learn React using AI, adapting exercises and content on the fly.',
+            techStack: ['Next.js', 'Supabase', 'Tailwind'],
+            github: 'https://github.com/aripo99/react-learning-ai-app',
+            image: '/images/aitr.png',
+            url: 'https://aitr.vercel.app',
         }
     ];
 
