@@ -7,7 +7,6 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
-import { Card, CardContent } from "@/components/ui/card"
 
 const values = [
     {
@@ -28,32 +27,27 @@ const values = [
     {
         title: "Think slow act fast"
     },
-    // {
-    //     title: "Give a shit"
-    // },
-    // {
-    //     title: "Appreciate the little things"
-    // },
-    // {
-    //     title: "Ask questions"
-    // },
+    {
+        title: "Give a shit"
+    },
+    {
+        title: "Appreciate the little things"
+    },
+    {
+        title: "Ask questions"
+    },
 ]
 
 export default function Values() {
     return (
-        <section className="my-12" id="projects">
+        <section className="my-12" id="values">
             <h2 className="text-3xl font-bold mb-10 text-gray-200 underline">Values</h2>
             <Carousel>
                 <CarouselContent className="-ml-1">
                     {values.map((value, index) => (
-                        <CarouselItem key={index} className="pl-1">
-                            <Card>
-                                <CardContent className="flex items-center justify-center p-6">
-                                    <span className="text-2xl font-semibold">{value.title}</span>
-                                </CardContent>
-                            </Card>
-                        </CarouselItem>
-                    ))}
+                        <CarouselItem key={index} className="pl-1 flex justify-center items-center">
+                            <p className="text-xl text-center">{value.title}</p>
+                        </CarouselItem>))}
                 </CarouselContent>
                 <CarouselPrevious />
                 <CarouselNext />

@@ -29,6 +29,11 @@ const TopNavBar = () => {
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
+                    <Link href="#values">
+                        <NavigationMenuButton>Values</NavigationMenuButton>
+                    </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
                     <Link href="#school">
                         <NavigationMenuButton>School</NavigationMenuButton>
                     </Link>
