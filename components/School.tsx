@@ -3,7 +3,7 @@ import React from 'react';
 // Overall Timeline Component
 const EducationTimeline: React.FC = () => {
     return (
-        <section className="mt-12 mb-12" id="school">
+        <section className="my-12" id="school">
             <h2 className="text-3xl font-bold mb-10 text-gray-200 underline">School</h2>
             <div className="relative border-l border-gray-200 dark:border-gray-700">
                 <ol>

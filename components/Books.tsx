@@ -111,7 +111,7 @@ const BooksCarousel: React.FC = () => {
 };
 
 const BooksSection: React.FC = () => (
-    <section className="mt-12 mb-12" id="books">
+    <section className="my-12" id="books">
         <h2 className="text-3xl font-bold mb-10 text-gray-200 underline">Favorite Books</h2>
         <BooksCarousel />
     </section>

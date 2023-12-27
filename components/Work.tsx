@@ -44,7 +44,7 @@ function Work() {
     ];
 
     return (
-        <section className="my-16 self-start w-full" id="work">
+        <section className="my-12 self-start w-full" id="work">
             <h2 className="text-3xl font-bold mb-10 text-gray-200 underline">Work</h2>
             <div className="flex flex-col"> {/* This wrapper arranges the cards vertically */}
                 {experiences.map((exp, index) => (
