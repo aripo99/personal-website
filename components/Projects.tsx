@@ -65,7 +65,7 @@ const Projects = () => {
             techStack: ['Next.js', 'Tailwind', 'shadcn/ui'],
             github: 'https://github.com/aripo99/ink-vision',
             image: '/images/tattoo_generator.png',
-            url: 'https://aitr.vercel.app'
+            url: 'https://www.inkvision.art/'
         },
         {
             name: 'Aitr',
