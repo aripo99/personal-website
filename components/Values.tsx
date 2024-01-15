@@ -16,6 +16,9 @@ const values = [
         title: "Do the right thing",
     },
     {
+        title: "Act with urgency",
+    },
+    {
         title: "Continuously improve",
     },
     {
