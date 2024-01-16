@@ -66,14 +66,6 @@ const Projects = () => {
             github: 'https://github.com/aripo99/ink-vision',
             image: '/images/tattoo_generator.png',
             url: 'https://www.inkvision.art/'
-        },
-        {
-            name: 'Aitr',
-            description: 'A platform to learn React using AI, adapting exercises and content on the fly.',
-            techStack: ['Next.js', 'Supabase', 'Tailwind'],
-            github: 'https://github.com/aripo99/react-learning-ai-app',
-            image: '/images/aitr.png',
-            url: 'https://aitr.vercel.app',
         }
     ];
 
