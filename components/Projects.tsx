@@ -43,6 +43,14 @@ const Projects = () => {
             url: 'https://kognis.ai',
         },
         {
+            name: 'Yatdl',
+            description: 'Yet Another To Do List, but minimal and gamified. Destroy todos :p',
+            techStack: ['Next.js', 'supabase', 'Tailwind', 'shadcn/ui'],
+            github: 'https://github.com/aripo99/yatdl',
+            image: '/images/yatdl.png',
+            url: 'https://yatdl-aripo99.vercel.app'
+        },
+        {
             name: 'Meme Generator',
             description: 'A meme generator that uses the gpt vision API to generate memes from uploaded images.',
             techStack: ['Next.js', 'Tailwind', 'shadcn/ui'],
@@ -52,12 +60,11 @@ const Projects = () => {
             url: 'https://aimemelab.com'
         },
         {
-            name: 'Yatdl',
-            description: 'Yet Another To Do List, but minimal and gamified. Destroy todos :p',
+            name: 'Challenge Betz',
+            description: 'A page to bet on challenges with friends, like who goes to the gym more each month.',
             techStack: ['Next.js', 'supabase', 'Tailwind', 'shadcn/ui'],
-            github: 'https://github.com/aripo99/yatdl',
-            image: '/images/yatdl.png',
-            url: 'https://yatdl-aripo99.vercel.app'
+            image: '/images/challenge.png',
+            url: 'https://challenge-betz.vercel.app/'
         },
         {
             name: 'Ink Vision',
