@@ -7,10 +7,9 @@ export default async function Blog({ params }: Params) {
     const blogId = params.id
     const resp = await getBlog(blogId)
     const markdown = resp.markdown
-
     return (
-        <div>
+        <div className="px-4 py-6 md:px-6 lg:py-12">
             <Markdown className="markdown">{markdown}</Markdown>
-        </div>
+        </div >
     )
 }
