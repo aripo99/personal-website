@@ -7,14 +7,10 @@ export default async function Blog({ params }: Params) {
     const blogId = params.id
     const resp = await getBlog(blogId)
     const markdown = resp.markdown
-    console.log("here")
-    console.log(markdown.toString())
-    console.log(typeof markdown)
 
     return (
         <div>
-            <h1>Blog {blogId} </h1>
-            <Markdown>{markdown}</Markdown>
+            <Markdown className="markdown">{markdown}</Markdown>
         </div>
     )
 }
