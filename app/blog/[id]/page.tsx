@@ -1,22 +1,15 @@
-'use client'
-
-import { usePathname } from "next/navigation"
 import Markdown from 'react-markdown'
 import getBlog from "@/lib/actions/get-blog"
-import { useState, useEffect } from "react"
+import { Params } from "next/dist/shared/lib/router/utils/route-matcher"
 
-export default function Blog() {
-    const [markdown, setMarkdown] = useState('')
-    const pathname = usePathname()
-    const blogId = pathname.split('/')[2]
 
-    useEffect(() => {
-        async function fetchBlog() {
-            const response = await getBlog(blogId)
-            setMarkdown(response.markdown)
-        }
-        fetchBlog()
-    }, [blogId])
+export default async function Blog({ params }: Params) {
+    const blogId = params.id
+    const resp = await getBlog(blogId)
+    const markdown = resp.markdown
+    console.log("here")
+    console.log(markdown.toString())
+    console.log(typeof markdown)
 
     return (
         <div>
