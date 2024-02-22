@@ -19,18 +19,23 @@ const TopNavBar = () => {
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="#work">
-                        <NavigationMenuButton>Work</NavigationMenuButton>
-                    </Link>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
                     <Link href="#projects">
                         <NavigationMenuButton>Projects</NavigationMenuButton>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
+                    <Link href="#work">
+                        <NavigationMenuButton>Work</NavigationMenuButton>
+                    </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
                     <Link href="#values">
                         <NavigationMenuButton>Values</NavigationMenuButton>
+                    </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                    <Link href="#blog">
+                        <NavigationMenuButton>Blog</NavigationMenuButton>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
