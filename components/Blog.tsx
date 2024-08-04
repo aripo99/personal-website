@@ -9,14 +9,14 @@ import {
 
 const blogs = [
     {
-        title: "Test",
-        description: "Coming soon...",
-        link: "blog/test",
+        title: "friends",
+        description: "coming soon... coming soon... coming soon... coming soon...",
+        link: "blogs/friends",
     },
     {
-        title: "Test",
-        description: "Coming soon... Coming soon... Coming soon... Coming soon...",
-        link: "blog/test",
+        title: "inmigrant",
+        description: "coming soon... coming soon... coming soon... coming soon...",
+        link: "blogs/inmigrant",
     },
 ];
 
