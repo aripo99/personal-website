@@ -1,13 +1,22 @@
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from "@/components/ui/card"
+
 const blogs = [
     {
-        title: "On Moving to the US",
+        title: "Test",
         description: "Coming soon...",
-        link: "#",
+        link: "blog/test",
     },
     {
-        title: "On Moving to the US",
-        description: "Coming soon...",
-        link: "#",
+        title: "Test",
+        description: "Coming soon... Coming soon... Coming soon... Coming soon...",
+        link: "blog/test",
     },
 ];
 
@@ -18,12 +27,17 @@ export default function Blog() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 {
                     blogs.map((blog, index) => (
-                        <div key={index} className="flex flex-col">
-                            <h3 className="text-xl font-bold mb-2">
-                                <a href={blog.link}>{blog.title}</a>
-                            </h3>
-                            <p>{blog.description}</p>
-                        </div>
+                        <Card key={index}>
+                            <CardHeader>
+                                <CardTitle>{blog.title}</CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <CardDescription>{blog.description}</CardDescription>
+                            </CardContent>
+                            <CardFooter>
+                                <a href={blog.link} className="text-blue-500 hover:underline">Read more</a>
+                            </CardFooter>
+                        </Card>
                     ))
                 }
             </div>
