@@ -10,14 +10,14 @@ import {
 const blogs = [
     {
         title: "friends",
-        description: "coming soon... coming soon... coming soon... coming soon...",
+        description: "most of my life i had friends. growing up in uruguay...",
         link: "blogs/friends",
     },
     {
-        title: "inmigrant",
-        description: "coming soon... coming soon... coming soon... coming soon...",
-        link: "blogs/inmigrant",
-    },
+        title: "moving to california",
+        description: "coming soon... coming soon...",
+        link: "blogs/moving-to-california",
+    }
 ];
 
 export default function Blog() {
