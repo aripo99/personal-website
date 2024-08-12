@@ -6,10 +6,10 @@ At age 17, I decided I wanted to go study in America. The next year, I found mys
 
 I’ve noticed over time that there are some aspects that really helped me in making friends:
 
-	1.	Becoming great friends with someone who has a great group of friends. This is probably the easiest way to make friends, since you can just piggyback on their friends.
-	2.	Being stuck in a place with the same people for a long time. This worked great for me in high school, since I was with the same people in my class for at least a year, so sooner or later, I ended up becoming great friends with someone.
-	3.	Being in a place where everyone is new, like in college.
-	4.	Living/traveling with other people. This is make-or-break, I think; either you become great friends, or you end up not liking each other, but my own experiences here have been great.
+* Becoming great friends with someone who has a great group of friends. This is probably the easiest way to make friends, since you can just piggyback on their friends.
+* Being stuck in a place with the same people for a long time. This worked great for me in high school, since I was with the same people in my class for at least a year, so sooner or later, I ended up becoming great friends with someone.
+* Being in a place where everyone is new, like in college.
+* Living/traveling with other people. This is make-or-break, I think; either you become great friends, or you end up not liking each other, but my own experiences here have been great.
 
 Obviously, there is no recipe to make great friends, and it also depends a lot on luck. Thinking back on the different stages of my life, though, I realize I was the happiest whenever I had great friends by my side. The moments where I was starting over without knowing many people were never comfortable.
 
