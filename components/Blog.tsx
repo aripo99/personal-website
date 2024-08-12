@@ -15,7 +15,7 @@ const blogs = [
     },
     {
         title: "moving to california",
-        description: "coming soon... coming soon...",
+        description: "at age 18, i moved to California for college.",
         link: "blogs/moving-to-california",
     }
 ];
