@@ -67,7 +67,7 @@ const Projects = () => {
         },
         {
             name: 'Meme Generator',
-            description: 'A meme generator that uses the gpt vision API to generate memes from uploaded images.',
+            description: 'Generate memes from uploaded images.',
             techStack: ['Next.js', 'Tailwind', 'shadcn/ui'],
             demo: 'https://www.youtube.com/watch?v=BW8J4QgWGJg',
             github: 'https://github.com/aripo99/meme_generator',
@@ -114,7 +114,7 @@ const Projects = () => {
                                 {project.demo ? (
                                     <a href={project.demo} target="_blank" rel="noopener noreferrer" className="text-left">Live Demo</a>
                                 ) : (
-                                    <p className="text-left text-gray-500">Coming soon</p>
+                                    <div></div>
                                 )}
                                 <div>
                                     {project.github && (
