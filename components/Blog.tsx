@@ -7,16 +7,16 @@ import {
     CardTitle,
 } from "@/components/ui/card"
 
-const blogs = [
+export const pieces = [
     {
         title: "moving to california",
         description: "at age 18, i moved to california for college.",
-        link: "blogs/moving-to-california",
+        link: "blog/moving-to-california",
     },
     {
         title: "friends",
         description: "most of my life i had friends. growing up in uruguay...",
-        link: "blogs/friends",
+        link: "blog/friends",
     }
 ];
 
@@ -26,7 +26,7 @@ export default function Blog() {
             <h2 className="text-3xl font-bold mb-10 text-gray-200 underline">Blog</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 {
-                    blogs.map((blog, index) => (
+                    pieces.map((blog, index) => (
                         <Card key={index}>
                             <CardHeader>
                                 <CardTitle>{blog.title}</CardTitle>
