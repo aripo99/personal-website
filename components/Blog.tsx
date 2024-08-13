@@ -9,14 +9,14 @@ import {
 
 const blogs = [
     {
+        title: "moving to california",
+        description: "at age 18, i moved to california for college.",
+        link: "blogs/moving-to-california",
+    },
+    {
         title: "friends",
         description: "most of my life i had friends. growing up in uruguay...",
         link: "blogs/friends",
-    },
-    {
-        title: "moving to california",
-        description: "at age 18, i moved to California for college.",
-        link: "blogs/moving-to-california",
     }
 ];
 
