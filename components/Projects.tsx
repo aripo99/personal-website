@@ -35,6 +35,13 @@ const ProjectImage: React.FC<ProjectImageProps> = ({ name, image, url }) => {
 const Projects = () => {
     const projectList = [
         {
+            name: 'Challenge Betz',
+            description: 'A page to bet on challenges with friends, like who goes to the gym more each month.',
+            techStack: ['Next.js', 'supabase', 'Tailwind', 'shadcn/ui'],
+            image: '/images/challenge.png',
+            url: 'https://challenge-betz.vercel.app/'
+        },
+        {
             name: 'Kognis',
             description: 'An AI-powered education platform that helps students learn more effectively.',
             techStack: ['Next.js', 'Flask', 'MongoDB', 'Pinecone'],
@@ -51,6 +58,14 @@ const Projects = () => {
             url: 'https://yatdl-aripo99.vercel.app'
         },
         {
+            name: 'Personal Website',
+            description: 'What you are looking at right now!',
+            techStack: ['Next.js', 'Tailwind', 'shadcn/ui'],
+            github: 'https://github.com/aripo99/personal-website',
+            image: '/images/personal_website.png',
+            url: 'https://aripolakof.com'
+        },
+        {
             name: 'Meme Generator',
             description: 'A meme generator that uses the gpt vision API to generate memes from uploaded images.',
             techStack: ['Next.js', 'Tailwind', 'shadcn/ui'],
@@ -58,13 +73,6 @@ const Projects = () => {
             github: 'https://github.com/aripo99/meme_generator',
             image: '/images/meme_generator.png',
             url: 'https://aimemelab.com'
-        },
-        {
-            name: 'Challenge Betz',
-            description: 'A page to bet on challenges with friends, like who goes to the gym more each month.',
-            techStack: ['Next.js', 'supabase', 'Tailwind', 'shadcn/ui'],
-            image: '/images/challenge.png',
-            url: 'https://challenge-betz.vercel.app/'
         },
         {
             name: 'Ink Vision',
