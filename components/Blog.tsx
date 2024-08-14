@@ -10,7 +10,7 @@ import {
 export const pieces = [
     {
         title: "moving to california",
-        description: "at age 18, i moved to california for college.",
+        description: "at age 18, i moved to california for college...",
         link: "blog/moving-to-california",
     },
     {
