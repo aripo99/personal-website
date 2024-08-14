@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const TopNavBar = () => {
     return (
-        <NavigationMenu className="md:block hidden">
+        <NavigationMenu>
             <NavigationMenuList>
                 <NavigationMenuItem>
                     <Link href="/">
