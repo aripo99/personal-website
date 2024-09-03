@@ -17,6 +17,11 @@ export const pieces = [
         title: "friends",
         description: "most of my life i had friends. growing up in uruguay...",
         link: "blog/friends",
+    },
+    {
+        title: "happiness",
+        description: "every once in a while i think about what makes me happy...",
+        link: "blog/happiness",
     }
 ];
 
