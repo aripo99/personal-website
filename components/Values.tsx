@@ -39,6 +39,9 @@ const values = [
     {
         title: "Ask questions"
     },
+    {
+        title: "Try really really hard, do not give up"
+    }
 ]
 
 export default function Values() {
