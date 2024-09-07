@@ -32,7 +32,7 @@ const Footer = () => {
                 IconComponent={FaGithub}
             />
             <SocialIcon
-                href="mailto:ari@kognis.ai"
+                href="mailto:aripolakof99@gmail.com"
                 ariaLabel="Email"
                 IconComponent={FaEnvelope}
             />
