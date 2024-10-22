@@ -14,6 +14,11 @@ export const pieces = [
         link: "blog/moving-to-california",
     },
     {
+        title: "reflecting on my time @ appfolio",
+        description: "my story with appfolio goes way back...",
+        link: "blog/reflecting-on-my-time-at-appfolio",
+    },
+    {
         title: "friends",
         description: "most of my life i had friends. growing up in uruguay...",
         link: "blog/friends",
