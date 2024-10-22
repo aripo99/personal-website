@@ -1,6 +1,6 @@
 ### reflecting on my time @ appfolio
 
-My story with AppFolio goes way back. It all started with me joining a data science capstone project class at UCSB, where we first did one quarter of data science coursework and then did a project for two quarters with a company. I ended up doing that project with AppFolio.
+My story with AppFolio goes way back. It all started with me joining a data science capstone project class at UCSB. I ended up doing that project with AppFolio.
 
 And it ended up being very worth it, since a few months into the project, my AppFolio mentor offered me an internship!
 
