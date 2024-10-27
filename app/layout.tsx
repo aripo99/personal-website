@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from "@/components/theme-provider"
 import { Analytics } from '@vercel/analytics/react';
+import TopNavBar from '@/components/TopNavBar';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -33,8 +34,11 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <div className="justify-center items-center flex p-10">
+                <TopNavBar />
+            </div>
             {children}
-	    <Analytics />
+	          <Analytics />
           </ThemeProvider>
         </body>
       </html>
