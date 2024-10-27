@@ -4,7 +4,7 @@ const description = "Hey! I'm Ari. I'm a software engineer based in the Bay Area
 
 const AboutMe: React.FC = () => {
     return (
-        <section className="my-12">
+        <section className="mb-10 mt-6">
             <div className="flex justify-between items-center py-8">
                 <InteractiveProfileImage />
                 <div className="w-2/3 ml-8">
