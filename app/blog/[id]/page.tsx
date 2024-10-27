@@ -10,7 +10,7 @@ export default async function Blog({ params }: { params: { id: string } }) {
 
     return (
         <>
-            <div className="container mx-auto px-4 py-8 max-w-3xl">
+            <div className="container mx-auto px-4 max-w-3xl">
                 <Card>
                     <CardContent className="pt-6">
                         <Markdown

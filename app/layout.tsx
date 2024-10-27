@@ -34,7 +34,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <div className="justify-center items-center flex p-10">
+            <div className="justify-center items-center flex pt-10 px-10">
                 <TopNavBar />
             </div>
             {children}

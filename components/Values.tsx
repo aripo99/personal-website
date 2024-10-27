@@ -46,7 +46,7 @@ const values = [
 
 export default function Values() {
     return (
-        <section className="my-12" id="values">
+        <section className="my-12 mx-8" id="values">
             <h2 className="text-3xl font-bold mb-10 text-gray-200 underline">Values</h2>
             <Carousel>
                 <CarouselContent className="-ml-1">
