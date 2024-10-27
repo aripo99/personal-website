@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import {
     Card,
     CardContent,
@@ -16,17 +17,19 @@ export default function Blog() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 {
                     pieces.map((blog, index) => (
-                        <Card key={index}>
-                            <CardHeader>
-                                <CardTitle>{blog.title}</CardTitle>
-                            </CardHeader>
-                            <CardContent>
-                                <CardDescription>{blog.description}</CardDescription>
-                            </CardContent>
-                            <CardFooter>
-                                <a href={blog.link} className="text-blue-500 hover:underline">read more</a>
-                            </CardFooter>
-                        </Card>
+                        <Link href={blog.link} key={index}>
+                            <Card>
+                                <CardHeader>
+                                    <CardTitle>{blog.title}</CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <CardDescription>{blog.description}</CardDescription>
+                                </CardContent>
+                                <CardFooter>
+                                    <a href={blog.link} className="text-blue-500 hover:underline">read more</a>
+                                </CardFooter>
+                            </Card>
+                        </Link>
                     ))
                 }
             </div>
