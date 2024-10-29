@@ -41,8 +41,8 @@ export default function Playlists() {
                 <Image 
                     src={playlist.imageUrl}
                     alt={playlist.title}
-                    width={300}
-                    height={300}
+                    width={330}
+                    height={330}
                 />
               </CardHeader>
               <CardContent className="p-4">
