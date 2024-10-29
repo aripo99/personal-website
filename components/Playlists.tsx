@@ -36,7 +36,10 @@ export default function Playlists() {
       <p className="text-lg mb-4">If you made it here... let&apos;s just say you weren&apos;t supposed to. But since you did, here&apos;s some bangers 😎</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {playlists.map((playlist) => (
-            <Card key={playlist.id} className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <Card 
+                key={playlist.id} 
+                className="overflow-hidden hover:shadow-lg transition-shadow duration-300 w-[330px] mx-auto"                
+            >
               <CardHeader className="p-4">
                 <Image 
                     src={playlist.imageUrl}
