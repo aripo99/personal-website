@@ -33,7 +33,7 @@ export default function Playlists() {
   return (
     <section className="my-12" id="projects">
       <h2 className="text-3xl font-bold mb-10 text-gray-200 underline">My Playlists</h2>
-      <p className="text-lg mb-4">If you made it here... let's just say you weren't supposed to. But since you did, here's some bangers 😎</p>
+      <p className="text-lg mb-4">If you made it here... let&apos;s just say you weren&apos;t supposed to. But since you did, here&apos;s some bangers 😎</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {playlists.map((playlist) => (
             <Card key={playlist.id} className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
