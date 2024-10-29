@@ -7,6 +7,7 @@ import Books from "@/components/Books"
 import Footer from "@/components/Footer"
 import Values from "@/components/Values"
 import Blog from "@/components/Blog"
+import Playlists from "@/components/Playlists"
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Blog />
         <School />
         <Books />
+        <Playlists />
       </div>
       <div className="z-10 w-full">
         <Footer />
