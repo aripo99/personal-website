@@ -10,16 +10,19 @@ import {
 
 const values = [
     {
-        title: "Always go the extra step",
-    },
-    {
-        title: "Do the right thing",
+        title: "Try really really hard, do not give up"
     },
     {
         title: "Act with urgency",
     },
     {
         title: "Continuously improve",
+    },
+    {
+        title: "Do the right thing",
+    },
+    {
+        title: "Give a shit"
     },
     {
         title: "Seek the truth",
@@ -31,16 +34,7 @@ const values = [
         title: "Think slow act fast"
     },
     {
-        title: "Give a shit"
-    },
-    {
         title: "Appreciate the little things"
-    },
-    {
-        title: "Ask questions"
-    },
-    {
-        title: "Try really really hard, do not give up"
     }
 ]
 
