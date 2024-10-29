@@ -9,14 +9,19 @@ import {
 
 export const pieces = [
     {
-        title: "moving to california",
-        description: "at age 18, i moved to california for college...",
-        link: "blog/moving-to-california",
+        title: "just send it",
+        description: "if there’s one thing I want to take from this year...",
+        link: "blog/just-send-it",
     },
     {
         title: "reflecting on my time @ appfolio",
         description: "my story with appfolio goes way back...",
         link: "blog/reflecting-on-my-time-at-appfolio",
+    },
+    {
+        title: "moving to california",
+        description: "at age 18, i moved to california for college...",
+        link: "blog/moving-to-california",
     },
     {
         title: "friends",
