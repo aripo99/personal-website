@@ -6,6 +6,7 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
+import Link from "next/link";
 
 export const pieces = [
     {
@@ -42,17 +43,18 @@ export default function Blog() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 {
                     pieces.map((blog, index) => (
-                        <Card key={index}>
-                            <CardHeader>
-                                <CardTitle>{blog.title}</CardTitle>
-                            </CardHeader>
-                            <CardContent>
-                                <CardDescription>{blog.description}</CardDescription>
-                            </CardContent>
-                            <CardFooter>
-                                <a href={blog.link} className="text-blue-500 hover:underline">Read more</a>
-                            </CardFooter>
-                        </Card>
+                        <Link href={blog.link} key={index}>
+                            <Card>
+                                <CardHeader>
+                                    <CardTitle>{blog.title}</CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <CardDescription>{blog.description}</CardDescription>
+                                </CardContent>
+                                <CardFooter>
+                                <span className="text-blue-500 hover:underline">Read more</span>                                </CardFooter>
+                            </Card>
+                        </Link>
                     ))
                 }
             </div>

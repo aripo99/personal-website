@@ -26,7 +26,7 @@ export default function Blog() {
                                     <CardDescription>{blog.description}</CardDescription>
                                 </CardContent>
                                 <CardFooter>
-                                    <a href={blog.link} className="text-blue-500 hover:underline">read more</a>
+                                    <span className="text-blue-500 hover:underline">Read more</span>
                                 </CardFooter>
                             </Card>
                         </Link>
