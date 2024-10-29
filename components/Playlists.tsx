@@ -27,6 +27,13 @@ const playlists: Playlist[] = [
         imageUrl: "/images/reggaeton_god.png",
         spotifyUrl: "https://open.spotify.com/playlist/6SBtMgEFHrhkZkGeIW7NXw?si=7c643c38f12f40ff",
     },
+    {
+        id: "3",
+        title: "Teketeke God",
+        description: "All sorts of techno music",
+        imageUrl: "/images/teketeke_god.png",
+        spotifyUrl: "https://open.spotify.com/playlist/5CCbxMjJRRD5w9S1wKBl8J?si=6a170aa428ea49a9",
+    },
 ]
 
 export default function Playlists() {
