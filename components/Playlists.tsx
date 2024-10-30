@@ -15,21 +15,21 @@ interface Playlist {
 const playlists: Playlist[] = [
     {
         id: "1",
-        title: "Cumbia Vieja God",
+        title: "Cumbia Vieja",
         description: "Old cumbia from Uruguay/Argentina",
         imageUrl: "/images/cumbia_vieja_god.png",
         spotifyUrl: "https://open.spotify.com/playlist/6uRo71FnrdJHDlwqisRjbD?si=9bbb2b5c82f04452",
     },
     {
         id: "2",
-        title: "Reggaeton God",
+        title: "Reggaeton",
         description: "Title says it all",
         imageUrl: "/images/reggaeton_god.png",
         spotifyUrl: "https://open.spotify.com/playlist/6SBtMgEFHrhkZkGeIW7NXw?si=7c643c38f12f40ff",
     },
     {
         id: "3",
-        title: "Teketeke God",
+        title: "Teketeke",
         description: "All sorts of techno music",
         imageUrl: "/images/teketeke_god.png",
         spotifyUrl: "https://open.spotify.com/playlist/5CCbxMjJRRD5w9S1wKBl8J?si=6a170aa428ea49a9",
