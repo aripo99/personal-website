@@ -15,6 +15,11 @@ export const pieces = [
         link: "blog/just-send-it",
     },
     {
+        title: "uruguay",
+        description: "aunque vivi la mayoria de mi vida en uruguay...",
+        link: "blog/uruguay",
+    },
+    {
         title: "reflecting on my time @ appfolio",
         description: "my story with appfolio goes way back...",
         link: "blog/reflecting-on-my-time-at-appfolio",
