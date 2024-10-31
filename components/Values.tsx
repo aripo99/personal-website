@@ -28,9 +28,6 @@ const values = [
         title: "Seek the truth",
     },
     {
-        title: "Be comfortable with being uncomfortable",
-    },
-    {
         title: "Think slow act fast"
     },
     {
