@@ -6,4 +6,4 @@ There’s something amazing about living life to the fullest—just trying stuff
 
 It’s crazy how deep that is for me. Some of my best memories come from the most random moments—things I had a million excuses not to do but did anyway.
 
-At the same time, I hate the feeling of inaction, of sitting there later wondering what if. That might’ve been the only chance, and now it’s gone forever. You’ll never know what could’ve happened. And for me, I always want to know. So I’ll find out.
+At the same time, I hate the feeling of inaction, of sitting there later wondering what if. That might’ve been the only chance, and now it’s gone forever. You’ll never know what could’ve happened. And for me, I always want to know, so I’ll try to find out :)
