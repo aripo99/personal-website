@@ -16,14 +16,24 @@ import {
 function Work() {
   const experiences = [
     {
-      title: "Machine Learning Engineer",
+      title: "Co-Founder and CEO",
+      company: "Flai",
+      projectsHeader: "Work",
+      projects: [
+        "Doing a bit of everything: Coding, reaching out to prospects, sales, etc.",
+      ],
+      techStack: ["NextJS", "Go"],
+      duration: "2025 - present",
+    },
+    {
+      title: "Founding Engineer",
       company: "HappyRobot",
       projectsHeader: "Projects",
       projects: [
         "Main Product: Building workflows with voice AI agents in the logistics space. Part of the core team developing the application, including the web interface, the workflows, integrations, and voice AI agents.",
       ],
       techStack: ["Python", "NextJS", "Go"],
-      duration: "2024 - present",
+      duration: "2024 - 2025",
     },
     {
       title: "Software Engineer",
